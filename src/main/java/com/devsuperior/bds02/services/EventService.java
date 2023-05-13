@@ -30,10 +30,10 @@ public class EventService {
 		}
 	}
 	
-	private void copyToEntity(Event newObj, EventDTO dto) {
-		newObj.setName(dto.getName());
-		newObj.setDate(dto.getDate());
-		newObj.setUrl(dto.getUrl());
-		newObj.setCity(new City(dto.getCityId(),null));
+	private void copyToEntity(Event obj, EventDTO dto) {
+		obj.setName(dto.getName());
+		obj.setDate(dto.getDate());
+		obj.setUrl(dto.getUrl());
+		obj.setCity(new City(dto.getCityId(),null));
 	}
 }
